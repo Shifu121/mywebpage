@@ -4,12 +4,81 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
+    margin: 0;
 }
 
-#main{
-    margin-left: auto;
-    margin-right: auto;
-    background-color: aliceblue;
-    
+.main{
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: white;
+    border-top: 10px rgb(26, 26, 26) solid;
+}
+
+.main h1{
+    color: rgb(199, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.imgtool{
+    display: inline-block;
+}
+
+.Title{
+    height: 60em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #000108b6;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Title_box h1{
+    font-family: 'Forte', 'Lucidia Console', 'Cascadia Code', 'Cooper Black';
+    font-size: 650%;
+    color: rgb(199, 0, 0);
+    line-height: 0px;
+}
+
+.Title_box img{
+    height: 50%;
+}
+
+.Menu{
+    display: flex;
+    align-items: center;
+    height: 3em;
+    background-color: #0001087e;
+}
+
+.Menu table{
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.Menu td{
     border-radius: 10px;
+    border: black 3px solid;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.Menu td:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.Menu a{
+    text-decoration: none;
+    color: white;
 }
