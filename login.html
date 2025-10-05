@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="Menu">
+        <table>
+            <tr>
+                <td>
+                    <a href="index.html">Main page</a>
+                </td>
+                <td>
+                    <a href="class.html">Classes</a>
+                </td>
+                <td>
+                    <a href="login.html">Login</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="Title">
+        <div class="Title_box">
+            <img src="https://cdn3.emoji.gg/emojis/2321-nat20.png" alt="D20">
+            <h1>Login</h1>
+            <img src="https://cdn3.emoji.gg/emojis/2321-nat20.png" alt="D20">
+        </div>
+    </div>
+    <div>
+        <section class="main">
+            <h1>Creating an account</h1>
+            <article>
+                <form action="login.html" method="get" target="_self">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username">
+                    <br>
+                    <label for="username">Password:</label>
+                    <input type="password" name="password" id="password">
+                    <br>
+                    <label for="mail">E-mail address:</label>
+                    <input type="email" name="mail" id="mail">
+                    <br>
+                    <label for="age">Age:</label>
+                    <input type="range" value="10" min="6" max="90" name="age" id="age" oninput="this.nextElementSibling.value = this.value">
+                    <output>10</output>
+                    <br>
+                    <label for="exp_newbie">Experience level:</label>
+                    <br>
+                    <input type="radio" name="exp" id="exp_newbie" value="newbie">
+                    <label for="exp_newbie">Newbie</label>
+                    <label for="exp_newbie" class="infotext">(I only recently started and I might get lost in a lot of information.)</label>
+                    <br>
+                    <input type="radio" name="exp" id="exp_player" value="player">
+                    <label for="exp_player">Player</label>
+                    <label for="exp_player" class="infotext">(I'm familiar with the rules and I can navigate across the sources.)</label>
+                    <br>
+                    <input type="radio" name="exp" id="exp_dm" value="dm">
+                    <label for="exp_dm">Dungeon Master</label>
+                    <label for="exp_dm" class="infotext">(I'm familiar with the rules of multiple versions of D&D as well as many of the books released. I also have no life.)</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="just_accept" id="just_accept">
+                    <label for="just_accept">I give permission to sell my soul. (I read the policy carefully and I take full responsibility for my arcane actions.)</label>
+                    <br>
+                    <input type="checkbox" name="just_accept2" id="just_accept2">
+                    <label for="just_accept2">I read the terms and services.</label>
+                    <br>
+                    <br>
+                    <input id="submit_btn" type="submit" value="Submit">
+                    <br>
+                </form>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

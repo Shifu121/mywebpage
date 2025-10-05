@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-position-y: 100%;
     margin: 0;
+    
 }
 
 .main{
@@ -13,7 +14,12 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
     color: white;
-    border-top: 10px rgb(26, 26, 26) solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main:last-child{
+    margin-bottom: 4em;
 }
 
 .main h1{
@@ -21,8 +27,30 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.main article{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
 .imgtool{
-    display: inline-block;
+    display: flex;
+    margin-left: 7em;
+}
+
+.imgs{
+    margin-top: 1em;
+    align-self: top;
+}
+
+.logo img{
+    width: 100%;
+    margin-top: 2em;
+}
+
+.class_pics{
+    width: 100%;
 }
 
 .Title{
@@ -81,4 +109,38 @@ body {
 .Menu a{
     text-decoration: none;
     color: white;
+}
+
+input{
+    margin-left: 1em;
+}
+
+#age{
+    vertical-align: middle;
+}
+
+.infotext{
+    font-style: italic;
+    color: gray;
+    font-size: 90%;
+    vertical-align: top;
+}
+
+form{
+    line-height: 180%;
+}
+
+label{
+    font-size: 130%;
+}
+
+input{
+    height: 1.4em;
+    font-size: 80%;
+}
+
+#submit_btn{
+    height: 2em;
+    width: 4em;
+    font-size: 200%;
 }
